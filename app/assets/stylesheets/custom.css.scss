@@ -1,0 +1,269 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* fonts */
+@font-face {
+    font-family: 'Roboto Regular';
+    src: font-url("Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Jumbotron 2';
+    src: font-url("Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: font-url("Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Dosis Light';
+    src: font-url("Dosis-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Font 1';
+    src: font-url("Quicksand-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Quicksand Light';
+    src: font-url("Quicksand-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Font 3';
+    src: font-url("JosefinSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Font 3 Bold';
+    src: font-url("JosefinSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Jumbotron 1';
+    src: font-url("Merriweather-Regular.ttf") format("truetype");
+}
+
+/* mixins, variables, etc. */
+
+$gray-medium: #909090;
+$gray-dk: #585858;
+$grey-md-dk: #686868;
+$dk-navbar: #111111;
+$gr-navbar: #2FBC5C;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* universal */
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* home page jumbotron */
+html,body {
+  height:100%;
+  width: 100%;
+}
+.special ,.special .jumbotron {
+  height:100%; 
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* header */
+
+/*.navbar {
+  background-color: $gr-navbar;
+}*/
+
+
+#logo {
+  float: left;
+  margin-left: 10px;
+  font-family: "Font 3";
+  margin-right: 10px;
+  font-size: 1.9em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#headerlist {
+  font-family: "Font 1";
+  text-transform: uppercase;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: #171717;
+  font-family: "Font 1";
+  text-transform: uppercase;
+  font-size: 90%;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #D0D0D0;
+  }
+}
+
+.jumbotron {
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: white;
+  text-align: center;
+  h1 {
+    font-size: 8vw;  
+    font-family: "Jumbotron 1";
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 7.5%;
+  }
+  p {
+    font-size: 4.4vw;
+    font-family: "Jumbotron 2";
+    color: #fff;
+  }
+}
+
+.container .jumbotron {
+  border-radius: 0px;
+}
+
+#hometop {
+  background-image: asset_url("background.jpeg");
+}
+
+#team {
+  background-image: asset_url("team_for_website.jpeg");
+  p {
+    font-family: "Font 3 Bold";
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+#projects {
+  background-image: asset_url("momentum_action_website_size.jpeg");
+  p {
+    font-family: "Font 3 Bold";
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+#sponsors {
+  background-image: asset_url("sponsor_background_website_size.jpg");
+  p {
+    font-family: "Font 3 Bold";
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+#join {
+  background-image: asset_url("join_website_size.jpg");
+  p {
+    font-family: "Font 3 Bold";
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+
+.about {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  text-align: left;
+  h5 {
+    color: $gray-medium;
+    padding-top: 30px;
+  }
+  h2 {
+    font-family: "Font 3 Bold";
+  }
+  p {
+    font-family: "Font 3";
+    margin-right: 25%;
+    font-size: 150%;
+    letter-spacing: 1px;
+  }
+}
+
+.intro {
+  padding-top: 50px;
+}
+
+/*.recruit {
+  letter-spacing: 2px;
+  font-family: "Dosis Light";
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 4vw;
+  h2 {
+    text-transform: uppercase;
+    border:1px solid black;
+    color: black;
+  }
+  a:link {
+    text-decoration:none;
+  }
+}*/
+
+.team, .projects {
+  h4 {
+    color: $gray-dk;
+  }
+  h5 {
+    color: $gray-medium;
+    font-family: "Roboto Regular";
+  }
+  p {
+    color: $gray-medium;
+    padding-right: 50px;
+    font-family: "Roboto Light";
+  }
+  padding-bottom: 7%;
+}
+
+/*.projects {
+  img {
+    max-
+  }
+}*/
+
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}

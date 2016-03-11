@@ -7,7 +7,7 @@
     src: font-url("Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Jumbotron 2';
+    font-family: 'Roboto Thin';
     src: font-url("Roboto-Thin.ttf") format("truetype");
 }
 @font-face {
@@ -19,7 +19,7 @@
     src: font-url("Dosis-Light.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Font 1';
+    font-family: 'Quicksand Regular';
     src: font-url("Quicksand-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -27,22 +27,28 @@
     src: font-url("Quicksand-Light.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Font 3';
+    font-family: 'JosefinSans Light';
     src: font-url("JosefinSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Font 3 Bold';
+    font-family: 'JosefinSans Bold';
     src: font-url("JosefinSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Jumbotron 1';
+    font-family: 'Merriweather Regular';
     src: font-url("Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'League';
+    src: font-url("LeagueSpartan-Bold.otf") format("truetype");
 }
 
 /* mixins, variables, etc. */
 
+$gray-light: #D0D0D0;
 $gray-medium: #909090;
 $gray-dk: #585858;
 $grey-md-dk: #686868;
@@ -84,23 +90,24 @@ html,body {
   padding-right: 0px;
 }
 
-/* header */
+/* header for homepage */
 
-/*.navbar {
-  background-color: $gr-navbar;
-}*/
-
+#homebar {
+  background-color: rgba(255, 0, 0, 0);
+  border-style: none;
+  color: red;
+}
 
 #logo {
   float: left;
   margin-left: 10px;
-  font-family: "Font 3";
+  font-family: "Quicksand Regular";
+  text-transform: uppercase;
   margin-right: 10px;
   font-size: 1.9em;
   color: white;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  padding-top: 9px;
+  padding-top: 5px;
   font-weight: bold;
   &:hover {
     color: white;
@@ -108,9 +115,23 @@ html,body {
   }
 }
 
+
 #headerlist {
-  font-family: "Font 1";
+  font-family: "Quicksand Regular";
   text-transform: uppercase;
+  color: $gray-light;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* header for non home */
+
+#nonhomebar {
+  background-color: sienna;
+  border-style: none;
+  color: red;
 }
 
 /* footer */
@@ -118,7 +139,7 @@ html,body {
 footer {
   text-align: center;
   background-color: #171717;
-  font-family: "Font 1";
+  font-family: "Quicksand Regular";
   text-transform: uppercase;
   font-size: 90%;
   color: white;
@@ -132,25 +153,32 @@ footer {
   }
 }
 
-.jumbotron {
+/*home page*/
+
+#hometop {
   background-size: cover;
   margin-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 140px;
   color: white;
-  text-align: center;
+  text-align: left;
   h1 {
-    font-size: 8vw;  
-    font-family: "Jumbotron 1";
-    font-weight: bold;
-    font-style: italic;
-    padding-top: 7.5%;
+    font-size: 7.5vw;  
+    font-family: "League";
+    padding-left: 8px;
+    /*padding-top: 7.5%;*/
   }
   p {
     font-size: 4.4vw;
-    font-family: "Jumbotron 2";
-    color: #fff;
+    font-family: "League";
+    padding-left: 8px;
+    padding-top: 50px;
   }
+}
+
+#join_us_home {
+  color: skyblue;
 }
 
 .container .jumbotron {
@@ -164,7 +192,7 @@ footer {
 #team {
   background-image: asset_url("team_for_website.jpeg");
   p {
-    font-family: "Font 3 Bold";
+    font-family: "JosefinSans Bold";
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -173,7 +201,7 @@ footer {
 #projects {
   background-image: asset_url("momentum_action_website_size.jpeg");
   p {
-    font-family: "Font 3 Bold";
+    font-family: "JosefinSans Bold";
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -182,7 +210,7 @@ footer {
 #sponsors {
   background-image: asset_url("sponsor_background_website_size.jpg");
   p {
-    font-family: "Font 3 Bold";
+    font-family: "JosefinSans Bold";
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -191,7 +219,7 @@ footer {
 #join {
   background-image: asset_url("join_website_size.jpg");
   p {
-    font-family: "Font 3 Bold";
+    font-family: "JosefinSans Bold";
     padding-top: 100px;
     padding-bottom: 80px;
   }
@@ -207,10 +235,10 @@ footer {
     padding-top: 30px;
   }
   h2 {
-    font-family: "Font 3 Bold";
+    font-family: "JosefinSans Bold";
   }
   p {
-    font-family: "Font 3";
+    font-family: "JosefinSans Light";
     margin-right: 25%;
     font-size: 150%;
     letter-spacing: 1px;

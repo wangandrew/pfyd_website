@@ -1,28 +1,4 @@
-<header class="navbar navbar-fixed-top navbar-inverse" id="nonhomebar">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    <%= link_to "Penn For Youth Debate", root_path, id: "logo" %>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Team", team_path, id: "headerlist" %></li>
-        <li><%= link_to "Projects", projects_path, id: "headerlist" %></li>
-        <!--<li><%= link_to "Sponsors", sponsors_path, id: "headerlist" %></li>-->
-        <!--<li><%= link_to "Gallery", gallery_path, id: "headerlist" %></li>-->
-        <li><%= link_to "Join Us", join_path, id: "headerlist" %></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</header>
+<%= render 'layouts/header' %>
 
 <div class="jumbotron" id="team">
   <div class="container-fluid">
@@ -119,10 +95,6 @@
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container-fluid">
-    <p>&copy; Penn For Youth Debate, 2016</p>
-    <p><a href="mailto:pfyd@pfyd.org?">Email</a> | <a href="https://www.facebook.com/pennpfyd">Facebook</a></p>
-  </div>
-</footer>
+
+<%= render 'layouts/footer' %>
 

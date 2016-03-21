@@ -164,13 +164,13 @@ footer {
   color: white;
   text-align: left;
   h1 {
-    font-size: 7.5vw;  
+    font-size: 7.0vw;  
     font-family: "League";
     padding-left: 8px;
     /*padding-top: 7.5%;*/
   }
   p {
-    font-size: 4.4vw;
+    font-size: 4.0vw;
     font-family: "League";
     padding-left: 8px;
     padding-top: 50px;
@@ -198,8 +198,8 @@ footer {
   }
 }
 
-#projects {
-  background-image: asset_url("momentum_action_website_size.jpeg");
+#about {
+  background-image: asset_url("board.jpg");
   p {
     font-family: "JosefinSans Bold";
     padding-top: 100px;

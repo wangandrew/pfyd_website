@@ -199,11 +199,16 @@ footer {
 }
 
 #about {
-  background-image: asset_url("board.jpg");
+  background-image: asset_url("bd.JPG");
+  background-size: 100%;
+  padding-bottom: 150px;
   p {
     font-family: "JosefinSans Bold";
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 300px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
   }
 }
 
